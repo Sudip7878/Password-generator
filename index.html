@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: aquamarine;
+		}
+
+		.container {
+			background-color: bisque;
+			height: 61vh;
+			width: 34vw;
+			border-radius: 22px;
+			margin-left: 465px;
+			text-align: center;
+		} 
+		.line{
+			background-color: blue;
+			height: 2vh;
+			width: auto;
+		}
+		#btn{
+			background-color: greenyellow;
+			cursor: grab;
+			transition: margin 0.3sec ease;
+		}
+		#btn:hover{
+			padding: 3px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Welcome To The Password Generator</h1>
+		<div class="line"></div>
+		<h2>Choose Your Preference</h2>
+		<form>
+			<label for="weakpass">WeakPassword</label>
+			<input type="radio" id="weakpass" value="password" name="password"><br>
+
+			<label for="funnypass">FunnyPassword</label>
+			<input type="radio" id="funnypass" value="password" name="password"><br>
+
+			<label for="stronpass">StrongPassword</label>
+			<input type="radio" id="strongpass" value="password" name="password"><br>
+
+			<label for="superstronpass">SuperStrongPassword</label>
+			<input type="radio" id="superstrongpass" value="password" name="password"><br><br>
+
+			<input type="submit" id="btn" value="Generate Password">
+
+			<h2>Your Password:</h2>
+			<div id="generated"></div>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
